@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x switch_to_betty.sh
+su betty
