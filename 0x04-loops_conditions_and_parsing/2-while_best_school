@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This script will be printning best scholl 10 times using a while loop
+
+word="Best School"
+i=1
+while ((i<=10)); do
+echo "$word"
+((i++))
+done
