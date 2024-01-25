@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#This script prints our best school 10 times and hi on the 9 iteration
+
+word1="Best School"
+word2="Hi"
+i=1
+while ((i<=10)); do
+echo "$word1"
+if [ "$i" == 9 ];
+then
+echo "$word2"
+fi
+((i++))
+done
