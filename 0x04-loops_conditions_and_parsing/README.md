@@ -1,0 +1,1 @@
+This project is About Bash projects where we are learnng on how to effecently work with bash scripts in order to make our programming journey easir and in this section Ill be demonstrating on how to create an ssh keygen that will be useful when I will be working with servers
