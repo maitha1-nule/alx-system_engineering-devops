@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script prints numbers 1 to 100 and displays FizzBuzz when the number is a multiple of 3, Fizz when a multiple of 5, and both if the number is a multiple of both
+
+word1="FizzBuzz"
+word2="Fizz"
+word3="Buzz"
+i=1
+
+while ((i <= 100)); do
+    if ((i % 3 == 0)) && ((i % 5 == 0)); then
+        echo "$word1"
+    elif ((i % 3 == 0)); then
+        echo "$word2"
+    elif ((i % 5 == 0)); then
+        echo "$word3"
+    else
+        echo "$i"
+    fi
+    ((i++))
+done
+
