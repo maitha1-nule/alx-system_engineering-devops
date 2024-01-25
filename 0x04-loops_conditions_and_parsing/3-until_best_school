@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This script will print best scholl 10 timess using untill loop
+
+word="Best School"
+i=1
+until ((i>10)); do
+echo "$word"
+((i++))
+done
