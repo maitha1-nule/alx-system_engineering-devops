@@ -7,9 +7,11 @@ while ((hours <= 12)); do
     minutes=1
 
     while ((minutes <= 59)); do
-echo  "%02d:%02d\n" "$hours" "$minutes"
-((minutes++))
-done
-((hours++))
+        echo "Hour: $hours"
+        printf "%02d\n" "$minutes"
+        ((minutes++))
+    done
+
+    ((hours++))
 done
 
