@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#This script will print bad luck when i=4 and good luck when i=8 amd the rest beest school untill 10 times
+
+word1="Best School"
+word2="bad luck"
+word3="good luck"
+i=1
+
+while ((i<=10)); do
+if [ "$i" == 4 ];
+then
+echo "$word2"
+elif [ "$i" == 8 ];
+then
+echo "$word3"
+else
+echo "$word1"
+fi
+((i++))
+done
