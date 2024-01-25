@@ -7,10 +7,9 @@ while ((hours <= 12)); do
     minutes=1
 
     while ((minutes <= 59)); do
-        printf "%02d:%02d\n" "$hours" "$minutes"
-        ((minutes++))
-    done
-
-    ((hours++))
+echo  "%02d:%02d\n" "$hours" "$minutes"
+((minutes++))
+done
+((hours++))
 done
 
