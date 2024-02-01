@@ -1,0 +1,1 @@
+This project is about an introduction to Networking in which i was able to learn about 4he concepts of the internet, from how it started, how to know ones MAC address and how its diffrent from.an IP addrress also leaned about IPv4 and IPv6 together with the diffrence bewtween UTP and UDP
