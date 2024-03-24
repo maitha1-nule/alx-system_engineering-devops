@@ -5,8 +5,8 @@ ensure => file,
 owner  => 'maitha1-nule',
 mode   => '0600',
 content=> "
-HostName 100.27.5.220
-User ubuntu
+HostName  172.22.1.182
+User maitha1-nule
 IdentityFile ~/.ssh/school
 PreferredAuthentications publickey
 PasswordAuthentication no
