@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+## This is a script which installs a new server called nginx configures it and returns a certain string hello world !
+apt-get update
+apt-get install nginx -y
+sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
+nginx -s reload
+echo "<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World!</title>
+</head>
+<body>
+  <h1>Hello World!</h1>
+</body>
+</html>" > /var/www/html/index.html
