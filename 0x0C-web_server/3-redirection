@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+## A scripts that Configure your Nginx server so that /redirect_me is redirecting to another page.
+apt-get update
+apt-get install nginx -y
+cat <<EOF > /etc/nginx/sites-available/redirect_me
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name _;
+
+    location /redirect_me {
+        return 301 https://example.com/redirected_page;
+    }
+
+    # Additional server configuration can be added here if needed
+}
+EOF
+ln -s /etc/nginx/sites-available/redirect_me /etc/nginx/sites-enabled/
+nginx -t
+nginx -s reload
