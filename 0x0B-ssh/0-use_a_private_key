@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+## This scripyt will be using ssh to connect to one's server using a private key called school with the user ubuntu
+ssh -i ~/.ssh/school ubuntu@52.204.67.38
