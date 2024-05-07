@@ -3,18 +3,16 @@
 
 
 import requests
+import sys
 
 
 def number_of_subscribers(subreddit):
-    """Return the total number of subscribers on a given subreddit."""
-    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-    headers = {
-        "User-Agent": "Mozilla/5.0"
-    }
-    response = requests.get(url, headers=headers, allow_redirects=False)
+    """ Returns number of subscribers to the subreddit,
+        or 0 if subreddit requested is invalid """
+    headers = {'User-Agent': '0x16-api_advanced'}
+    URL = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+    response = requests.get(URL, headers=headers, allow_redirects=False)
+
     if response.status_code == 200:
-         data = response.json()
-         subscribers = data['data']['subscribers']
-         return subscribers
-    else:
-        return 0
+        return (response.json().get("data").get("subscribers"))
+    return (0)
